@@ -1,0 +1,17 @@
+import java.io.*;
+public class P1 {
+
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new FileReader("cia.txt"));
+		Country[] world = new Country[194];
+		for (int i=0;i<194;i++) world[i] = new Country(br.readLine());
+		br.close();
+		long pop = 0;
+		for (Country country : world){
+			pop += country.region.equals("Europe")?country.pop:0;
+		}
+		System.out.println("The world population is: "+pop);
+
+	}
+
+}
