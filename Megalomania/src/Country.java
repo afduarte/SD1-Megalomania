@@ -6,11 +6,11 @@ public class Country {
 	public long pop;
 	public long gdp;
 	
-	public Country(String n,String r,int a,long p,long gdp){
-		this.name = n;
-		this.region = r;
-		this.area = a;
-		this.pop = p;
+	public Country(String name,String region,int area,long population,long gdp){
+		this.name = name;
+		this.region = region;
+		this.area = area;
+		this.pop = population;
 		this.gdp = gdp;
 	}
 	
